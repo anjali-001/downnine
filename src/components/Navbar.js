@@ -16,7 +16,7 @@ export default class Navbar extends Component {
             <button className="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
                 <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
             <ul>
             <li>
             <Link to='/' className="navbar-nav nav-item nav-link align-items-center">
@@ -87,5 +87,4 @@ ul{
 
 
 `
-
 

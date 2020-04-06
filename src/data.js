@@ -39,7 +39,7 @@ export const menuItems = [
   },
   {
     id: 4,
-    title: "Mojika",
+    title: "Mojito",
     img: "img/item-4.jpeg",
     price: 18,
     info:

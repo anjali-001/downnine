@@ -1,11 +1,11 @@
-import React, {Component,useContext} from 'react';
-import {DataContext} from '../context';
+import React, {useContext} from 'react';
+import {MenuContext} from '../context';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
 
 const Menu = ({item}) => {
-    const {handleDetail} = useContext(DataContext);
+    const {handleDetail} = useContext(MenuContext);
     const {id,img,price,title} = item
     return (
     <MenuWrapper className="container col-12 col-md-6 col-lg-4"  >
@@ -20,7 +20,7 @@ const Menu = ({item}) => {
     {price}</h5>
     <p className="align-self-center mb-0">{title}</p>
     <button className="cart-btn">
-        <Link to="/cart" className="cart-btn">
+        <Link to="/cart" className="cart-btn p-1">
         <i className="fas fa-cart-plus"/>
         </Link>
     </button>

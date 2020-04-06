@@ -17,5 +17,4 @@ transition: 0.5sec ease-in-out;
     border-color: var(--darkYellow);
     color: var(--darkYellow);
 }
-
 `

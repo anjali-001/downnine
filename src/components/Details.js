@@ -1,12 +1,12 @@
 import React, {useContext} from 'react';
-import { DataContext } from '../context';
+import { MenuContext } from '../context';
 import {Link} from 'react-router-dom';
 import {ButtonContainer} from './Button';
 
 
 const Details = () => {
-    const {detailProduct} = useContext(DataContext);
-    const {id, title, img, price,info} = detailProduct
+    const {detailProduct} = useContext(MenuContext);
+    const {title, img, price,info} = detailProduct
     
 
     return(

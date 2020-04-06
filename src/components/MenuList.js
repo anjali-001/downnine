@@ -1,9 +1,9 @@
 import React, {useContext } from 'react'
 import Menu from './Menu'
-import { DataContext } from '../context'
+import { MenuContext } from '../context'
 
 const MenuList = () => {
-    const {products} = useContext(DataContext)
+    const {products} = useContext(MenuContext)
     
         return (
             <React.Fragment>
