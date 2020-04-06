@@ -1,15 +1,11 @@
-import React, { Component } from 'react'
-import Menu from './Menu'
+import React from 'react'
 
-export class MenuList extends Component {
-    render() {
-        return (
-            <div>
-                hello from menu MenuList
-                <Menu></Menu>
-            </div>
-        )
-    }
+function MenuList() {
+    return (
+        <div>
+            hello from menu list
+        </div>
+    )
 }
 
 export default MenuList

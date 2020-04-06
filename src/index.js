@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Route} from 'react-router-dom'
-
+import MenuContextProvider from './context'
 
 ReactDOM.render(
   <React.StrictMode>
+  <MenuContextProvider>
     <Route>
     <App />
     </Route>
+    </MenuContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,21 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body{
+    width:100vw;
+    height: 100vh;
+}
+.font{
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
+}
+.lineC{
+    width:100%;
+    height:2px;
+    background:#fff;
+}
