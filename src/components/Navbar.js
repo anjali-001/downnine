@@ -1,86 +1,45 @@
-import React, {Component} from 'react';
-import logo from '../logo.svg';
-import {Link} from 'react-router-dom';
-import styled from 'styled-components';
-import {ButtonContainer} from './Button';
+import React from 'react'
+import img from '../logo.png'
+import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
-
-export default class Navbar extends Component {
-    render(){
+export default function Navbar() {
     return (
-        <NavWrapper className="navbar navbar-expand-lg  navbar-dark px-sm-5">
-            <Link to='/'>
-                <img src={logo} alt="downNine" className="navbar-brand"/>
-            </Link>
-
-            <button className="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul>
-            <li>
-            <Link to='/' className="navbar-nav nav-item nav-link align-items-center">
-               Home 
-            </Link>
-            </li>
-            <li>
-            <Link to='/Menu' className="navbar-nav nav-item nav-link align-items-center">
-               Menu
-            </Link>
-            </li>
-            <li>
-            <Link to='/About' className="navbar-nav nav-item nav-link align-items-center">
-               About
-            </Link>
-            </li>
-            <li>
-            <Link to='/Contact' className="navbar-nav nav-item nav-link align-items-center">
-               contact
-            </Link>
-            </li>
-            </ul>
-            </div>
-            <Link to='/Cart' className="ml-auto">
-                <ButtonContainer className="nav-item">
-                     Check Please!
-                    <i className="fas fa-cocktail"/>
-                </ButtonContainer>
-            </Link>
+        <NavElement>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <img src={img} className="navbar-brand img-fluid" alt="logo" />
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div className="navbar-nav ml-auto mx-auto ">
+                     <Link to="/" className="nav-item nav-link mx-4 active nounderline" href="#">Home <span className="sr-only">(current)</span></Link>
+                     <Link to="/menu" className="nav-item nav-link mx-4" href="#">Menu</Link>
+                     <Link to="/contact" className="nav-item nav-link mx-4" href="#">Contact Us</Link>
+                     <Link to="/about" className="nav-item nav-link mx-4" href="#">About</Link>   
+                     <Link to="/cart" className="nav-item nav-link mx-4 " href="#">Cart</Link>
+                </div>
+                </div>
+            </nav>
             
-        </NavWrapper>
+        </NavElement>
     )
 }
+
+const NavElement =styled.nav `
+.nav-item{
+color:#ff9900 !important;
+text-decoration:none !important;
+font-weight:700 !important;
+font-size:25px
+
 }
-
-
-const NavWrapper = styled.nav`
-background: var(--mainGrey);
-.nav-link{
-    padding-left: 2rem;
-    color: var(--lightPink);
-    font-size:1.3rem;
-    text-transform: capitalize;
-    
+.nav-item:hover{
+        color:#fff !important;
+    }
+.navbar-brand{
+    width:250px;
+    height:70px;
+    padding:0
 }
-.nav-link:hover{
-    color:var(--darkPink);
-}
-li{
-    
-    float: left;
-    
-}
-ul{
-    
-    list-style-type: none;
-    margin:0 0 0 50%;
-    padding: 0;
-    overflow: hidden;
-}
-
-
-
-
 `
-
-
