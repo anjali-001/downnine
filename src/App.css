@@ -1,3 +1,16 @@
+:root{
+    --mainGrey: #1a1a1a;
+    --mainDark:   #000000;
+    --lightPink: #ff8080;
+    --darkPink: #972727;
+    --mainWhite: #ffffff;
+    --lightYellow:#e68a00;
+    --darkYellow: #6e4404;
+    
+    
+
+}
+
 *{
     margin:0px;
     padding:0px;
@@ -6,9 +19,11 @@
     overflow-x: hidden;
     overflow-y: auto;
 }
+
 body{
-    width:100vw;
-    height: 100vh;
+    font-family:'Merriweather', serif !important;
+    background-color: var(--mainWhite) !important;
+    color: var(--mainDark)!important;
 }
 .font{
     font-family: 'Comic Neue', cursive;
@@ -19,3 +34,9 @@ body{
     height:2px;
     background:#fff;
 }
+
+.image{
+    width:400px;
+    height:500px;
+}
+
